@@ -1,1 +1,10 @@
-return { { 'luisiacc/gruvbox-baby' } }
+return {
+	{ "rebelot/kanagawa.nvim" },
+	{
+		"luisiacc/gruvbox-baby",
+		config = function()
+			vim.g.gruvbox_baby_background_color = "dark"
+			vim.cmd.colorscheme("gruvbox-baby")
+		end,
+	},
+}
